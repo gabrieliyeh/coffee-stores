@@ -150,7 +150,7 @@ const CoffeeStore = ({ coffeeStorePropData }) => {
               width="600"
               height="360"
               className={styles.storeImg}
-              alt="image"
+              alt={name}
             />
           </div>
         </div>

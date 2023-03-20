@@ -53,6 +53,7 @@ export default function Home({coffeeStores}) {
           Coffee Connoisseur 
         </title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="allows you to discover coffee store" />
       </Head>
       <main className={styles.main}>
         <Banner buttonText= {isFindingLocation ? 'Locating...': 'View stores nearby'}
