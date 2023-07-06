@@ -14,8 +14,8 @@ export const getListOfCoffeeStorePhotos = async ()=> {
     query: 'coffee shop',
     perPage: 30,
   });
-  const unsplashResults = photos.response.results
- return unsplashResults.map(result => result.urls['small'])
+  const unsplashResults = photos.response?.results
+ return unsplashResults?.map(result => result.urls['small'])
 }
 
 export const fetchCoffeeStores = async (latLong='6.45,3.43', limit = 6) => {
@@ -29,7 +29,7 @@ export const fetchCoffeeStores = async (latLong='6.45,3.43', limit = 6) => {
   })
   const data = await response.json()
 
-  return data.results.map((result, i) => {
+  return data.results?.map((result, i) => {
     return {
       fsq_id: result.fsq_id,
       formatted_address: result.location.formatted_address || '',

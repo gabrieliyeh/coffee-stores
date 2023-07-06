@@ -17,6 +17,7 @@
   position: absolute;
   top: 0px;
   z-index: 1;
+  display: none;
 }
 
 .cardLayout {
@@ -78,6 +79,7 @@
 
   .heroImage {
     right: 20%;
+    display: block;
   }
 
   .cardLayout {
@@ -89,6 +91,7 @@
   .container {
     padding-left: 2.5rem /* 40px */;
     padding-right: 2.5rem /* 40px */;
+
   }
   .main {
     margin-top: 5rem /* 80px */;

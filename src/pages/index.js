@@ -56,6 +56,7 @@ export default function Home({coffeeStores}) {
         <meta name="description" content="allows you to discover coffee store" />
       </Head>
       <main className={styles.main}>
+        
         <Banner buttonText= {isFindingLocation ? 'Locating...': 'View stores nearby'}
          handleOnClick={handleOnBannerBtnClick}/>
         {locationErrorMsg && <p>Something went wrong:{locationErrorMsg} </p>}
@@ -63,6 +64,7 @@ export default function Home({coffeeStores}) {
         <div className={styles.heroImage}>
         <Image src='/static/hero-image.png' width={700} height={400} alt='hero' priority />
         </div>
+      
         {coffeeStoresData.length > 0 && (
           <div className={styles.sectionWrapper}>
             <h2 className={styles.heading2}>Stores near me</h2>
